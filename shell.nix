@@ -5,6 +5,6 @@ in
 
 pkgs.mkShellNoCC {
   packages = with pkgs; [
-    (haskellPackages.ghcWithPackages (hpkgs: [hpkgs.regex-pcre]))
+    (haskellPackages.ghcWithPackages (hpkgs: [hpkgs.regex-pcre hpkgs.split]))
   ];
 }
